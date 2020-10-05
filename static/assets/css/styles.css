@@ -233,10 +233,10 @@ img{
 /*BUTTONS*/
 .button{
   display: inline-block;
-  background-color: var(--first-color);
   color: #fff;
-  padding: .75rem 2rem;
+  padding: .55rem 1.5rem;
   font-weight: var(--font-semi);
+  border-style: solid;
   border-radius: .5rem;
 }
 .button:hover{
