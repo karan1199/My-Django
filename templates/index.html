@@ -1,0 +1,78 @@
+
+{% extends 'base.html' %}
+{% load static %}
+    {% block body %}    
+
+        <main class="l-main">
+            
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Karan Patel</span><br>Mechatronics Engineer</h1>
+
+                    
+                    <a href="/projects" class="button text-light" style="text-decoration:none">My Project</a>
+                    <a href="/skills" class=" button text-light" style="text-decoration:none">My Skills</a>
+
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/karan1199" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/karan1199" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.instagram.com/karan.1199" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100009723154783" class="home__social-icon"><i class='bx bxl-facebook' ></i></a>
+                    
+
+                </div>
+
+                <div class="home__img" >    
+                    <img src="{% static 'assets/img/Karanpic.png' %}" class="image-padding"  alt="">
+                </div>
+
+
+            </section>
+
+            <section class="about section " id="about">
+                
+                <div class="about__container bd-grid">
+                    
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm a Roboticist by choice and passion
+                          I build robots for a cause and a reason</h2>
+                                   
+                    </div> 
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/suite.png' %}" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="about section " id="about">
+                
+                <div class="about__container bd-grid">
+                    
+                    
+                    <div>
+                        <h2 class="about__subtitle">Passionate about Robotics and Automation and solving real world problems.</h2>
+                                   
+                    </div> 
+                    <div class="about__img">
+                        <img src=" {% static 'assets/img/iit2.jpg' %}" alt="">
+                    </div>
+
+                </div>
+
+            </section>
+
+            
+
+            
+            
+        </main>
+
+
+
+    {% endblock body %}
