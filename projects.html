@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+
+	<main class="l-main">
+	<!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">My Projects</h2>
+
+
+                
+
+                <div class="work__container bd-grid">
+
+                    {% for project in projects %}
+                    <div class="card work__img" style="width: 18rem;">
+                      <img src="{{project.img.url}}" class="card-img-top" style="max-height: 180px" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">{{project.title}}</h5>
+                        <div class="text-center">
+                        <a href="{{project.link}}" class="btn btn-primary ">View Project</a>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
+                
+
+                
+            </section>
+    </main>
+{% endblock body %}

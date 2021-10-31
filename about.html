@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+	<main class="l-main" style="font-size: 17px">
+    <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid p-3 border border-dark rounded-lg my-3">
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/shirt1.png' %}" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm Karan</h2>
+                        <p class="about__text">I have a record of high academic and extracurricular success and distinguished projects in robotics, automation, image processing, electronics and machine learning. Professionally trained through many internships and online courses. Practitioner in machine learning, embedded systems, circuit design, IoT, Robotic Process Automation and sensor integration.Learned and implemented many programming and software skills. </p>
+                        
+                          <a href="/static/assets/img/Karan's_Profile.pdf" download="Karan's Resume " class="button text-light mt-3" style="text-decoration:none">Download CV</a>
+                                
+                    </div> 
+
+                </div>
+                
+                <div class=" bd-grid  my-3 " >
+                    
+                      <div class=" pt-4  content border border-dark rounded-lg p-4">
+                        
+                        
+                        <div class="row " >
+                          <div class="col-lg-6">
+                            <ul>
+                              <li><i class="bx bx-right-arrow text-primary py-2" ></i> <strong>Birthday :</strong> 1 Jan 1999</li>
+                              <li><i class="bx bx-right-arrow text-primary py-2"></i> <strong>Phone :</strong> +91 9157690522</li>
+                              <li><i class="bx bx-right-arrow text-primary py-2"></i> <strong>City :</strong> Anand, Gujarat ,India</li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6 ">
+                            <ul>
+                              <li><i class="bx bx-right-arrow text-primary py-2"></i> <strong> Age :</strong> 21</li>
+                              <li><i class="bx bx-right-arrow text-primary py-2"></i> <strong> Degree :</strong> B.E. Mechatronics</li>
+                              <li><i class="bx bx-right-arrow text-primary py-2"></i> <strong> Email :</strong> karan11119999@gmail.com</li>
+                              
+                            </ul>
+                          </div>
+                          <div> &nbsp;</div>
+                        </div>
+                        <p>
+                          
+                        </p>
+
+                </div>
+
+
+
+
+
+
+
+
+            </section>
+
+
+
+
+
+
+    </main>
+
+{% endblock body %}

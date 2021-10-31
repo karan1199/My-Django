@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+	<main class="l-main">
+    <!--===== CONTACT =====-->
+
+            <section class="contact section" id="contact">
+                {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Hola !</strong> Your response has been recorded. Thanks for your feedback.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                {% endfor %}
+                {% endif %}
+
+
+                <h2 class="section-title">Contact</h2>
+                <div class="footer__social ">
+                    
+                </div>
+
+
+                <div class="contact__container bd-grid mb-2">
+                    
+                    <form action="/contact" method="post" class="contact__form">{% csrf_token %}
+
+                        <div class="d-flex justify-content-center mb-2">
+                            <a href="https://www.facebook.com/profile.php?id=100009723154783" class="footer__icon text-dark "><i class='bx bxl-facebook bx-md' ></i></a>
+                            <a href="https://www.instagram.com/karan.1199" class="footer__icon text-dark"><i class='bx bxl-instagram bx-md' ></i></a>
+                            <a href="https://www.linkedin.com/in/karan1199" class="footer__icon text-dark"><i class='bx bxl-linkedin bx-md' ></i></a>
+                            <a href="https://github.com/karan1199" class="footer__icon text-dark"><i class='bx bxl-github bx-md' ></i></a>
+                        </div>
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" type="textarea" style="font-size: 18px" placeholder="Message" cols="0" rows="10" class="contact__input"></textarea>
+                        <button type="submit" class=" button text-primary border-primary text-center" >Send Message</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+{% endblock body %}

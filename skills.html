@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+	<main class="l-main">
+    <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">My research interests are Python Programming, Computer Vision,  Machine Learning and  Robot Software Development.  I love working on current issues with the knowledge that I have. Apart from the course-work and  research projects, I also keep myself busy with projects on social causes using Robotics.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-terminal skills__icon'></i>
+                                <span class="skills__name">Python/C++ Programming</span>
+                            </div>
+                            <div class="skills__bar skills__pro">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-atom skills__icon'></i>
+                                <span class="skills__name">Machine Learning and Image Processing</span>
+                            </div>
+                            <div class="skills__bar skills__ml">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-cube-alt skills__icon' ></i>
+                                <span class="skills__name">Autocad 2D/3D Modelling</span>
+                            </div>
+                            <div class="skills__bar skills__cad">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-microchip skills__icon'></i>
+                                <span class="skills__name">PLC Programming and RPA</span>
+                            </div>
+                            <div class="skills__bar skills__plc">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">Django Web Development</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="{% static 'assets/img/skills.jpg' %}" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section " id="about">
+                <h2 class="section-title">Technologies Worked with</h2>
+
+                <div class="about__container bd-grid  p-4 border border-dark rounded-lg my-3">
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/AI.gif' %}" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Pytorch <br> Tensorflow <br> Scikit-learn</h2>
+                                   
+                    </div> 
+
+                </div>
+
+                <div class="about__container bd-grid  p-4 border border-dark rounded-lg my-3">
+                    
+                    
+                    <div>
+                         <h2 class="about__subtitle">Atmel Microcontrollers <br> Raspberry Pi 3 <br> OpenMV</h2>           
+                    </div> 
+
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/rpi.gif' %}" alt="">
+                    </div>
+
+                </div> 
+
+                <div class="about__container bd-grid  p-4 border border-dark rounded-lg my-3">
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/objectdetection.gif' %}" alt="">
+                    </div>
+                    
+                    <div>
+                         <h2 class="about__subtitle">OpenCV <br> Aruco Markers <br> Vuforia</h2>           
+                    </div> 
+
+                </div>
+
+
+
+                <div class="about__container bd-grid  p-4 border border-dark rounded-lg my-3">
+                    
+                    
+                    <div>
+                         <h2 class="about__subtitle">Pose Estimation <br> NLTK <br> IBM Watson APIs</h2>           
+                    </div> 
+
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/pose.gif' %}" alt="">
+                    </div>
+
+                </div>
+
+                <div class="about__container bd-grid  p-4 border border-dark rounded-lg my-3">
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/react.gif' %}" alt="">
+                    </div>
+                    
+                    <div>
+                         <h2 class="about__subtitle">MIT App Inventor <br> Flask <br> React Native</h2>           
+                    </div> 
+
+                </div>
+
+                <div class="about__container bd-grid  p-4 border border-dark rounded-lg my-3">
+                    
+                    
+                    <div>
+                         <h2 class="about__subtitle">Robot Arm stimulation <br> Servo Control <br> Coppeliasim </h2>           
+                    </div> 
+
+                    <div class="about__img">
+                        <img src="{% static 'assets/img/eye2hand.gif' %}" alt="">
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+           
+                
+
+                
+                </div>
+
+            
+    </main>
+
+{% endblock body %}
